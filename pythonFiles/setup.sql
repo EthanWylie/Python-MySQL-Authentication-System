@@ -1,0 +1,25 @@
+create database encryption_website
+use encryption_website
+
+create table users(
+	user_id int primary key,
+	user_email varchar(255) not null,
+	user_password varchar(255) not null,
+	first_name varchar(255),
+	last_name varchar(255)
+	);
+    
+insert into users(user_id, user_email, user_password, first_name, last_name) values ('example@email.com', 'hashed_password', 'John', 'Doe');
+
+alter table users modify user_id int auto_increment;
+
+ALTER TABLE users
+ADD CONSTRAINT unique_email UNIQUE (user_email);
+
+ALTER TABLE users
+ADD CONSTRAINT unique_user_id UNIQUE (user_id);
+
+ALTER TABLE users MODIFY user_password VARCHAR(255);
+
+select * from users;
+
