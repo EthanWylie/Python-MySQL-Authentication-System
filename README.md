@@ -11,21 +11,21 @@ SQLite automatically creates a local database, making it easier to get started w
 The application also includes email validation and password verification for account authentication.
 
 ## Features
--User registration with email validation
--Password hashing using bcrypt
--User login with password verification
--SQLite database integration
--MySQL database integration
--Database selection when launching the application
--Automatic SQLite database and table creation
--Unique email addresses for user accounts
+- User registration with email validation
+- Password hashing using bcrypt
+- User login with password verification
+- SQLite database integration
+- MySQL database integration
+- Database selection when launching the application
+- Automatic SQLite database and table creation
+- Unique email addresses for user accounts
 
 ## Prerequisites
--Python 3.11.2 or newer
--Required Python packages:
--customtkinter
--mysql-connector-python
--bcrypt
+- Python 3.11.2 or newer
+- Required Python packages:
+- customtkinter
+- mysql-connector-python
+- bcrypt
 
 ## Setup
 1. Clone the repository:
@@ -43,26 +43,26 @@ python pythonFiles/main.py
 When launching the application, you can choose between SQLite and MySQL.
 
 ### SQLite
-*Select sqlite from the database selection menu.
-*Click Continue.
-*The application automatically creates the encryption_website.db database and the required users table.
-*No additional database setup is required.
+* Select sqlite from the database selection menu.
+* Click Continue.
+* The application automatically creates the encryption_website.db database and the required users table.
+* No additional database setup is required.
 ### MySQL
-*Install MySQL Server and make sure it is running.
-*Open setup.sql in MySQL Workbench and execute the script to create the encryption_website database and users table.
-*Update the MySQL connection details in database.py to match your MySQL configuration.
-*Select mysql from the database selection menu.
-*Click Continue.
+* Install MySQL Server and make sure it is running.
+* Open setup.sql in MySQL Workbench and execute the script to create the encryption_website database and users table.
+* Update the MySQL connection details in database.py to match your MySQL configuration.
+* Select mysql from the database selection menu.
+* Click Continue.
 ### Usage
-*Launch the application.
-*Choose between SQLite and MySQL.
-*Click Continue to connect to your selected database.
-*Use the "Create Account" button to register a new user.
-*Enter a valid email and a password with at least 8 characters.
-*Use the "Login" button to log in with an existing account.
+* Launch the application.
+* Choose between SQLite and MySQL.
+* Click Continue to connect to your selected database.
+* Use the "Create Account" button to register a new user.
+* Enter a valid email and a password with at least 8 characters.
+* Use the "Login" button to log in with an existing account.
 ### Technologies Used
-*Python
-*CustomTkinter
-*SQLite
-*MySQL
-*bcrypt
+* Python
+* CustomTkinter
+* SQLite
+* MySQL
+* bcrypt
